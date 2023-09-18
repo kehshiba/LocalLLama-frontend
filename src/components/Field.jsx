@@ -62,14 +62,14 @@ const Field = ({ onSendMessage }) => {
     <div>
       <ToastContainer />
 
-        <div className="m-10 flex max-w-md gap-x-4">
-        <div className="relative flex">
+      <div className="w-full max-w-md m-10 flex gap-x-4">
+        <div className="relative flex ">
   <input
     type="text"
     value={inputText}
     onChange={handleInputChange}
     required
-    className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-stone-500 sm:text-sm sm:leading-6"
+    className="w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-stone-500 sm:text-sm sm:leading-6"
     placeholder="Enter Prompt"
   />
   <div className="relative">
@@ -101,14 +101,15 @@ const Field = ({ onSendMessage }) => {
       on
       className="opacity-0 absolute inset-0 w-full h-full cursor-pointer border-0 bg-white/5 px-3 py-2 text-gray-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-stone-500 sm:text-sm sm:leading-6"
     />
-  </div>
 </div>
+        </div>
 
 
-              <button
+
+        <button
                 type="submit"
                 onClick={handleSend}
-                className="flex-none rounded-md bg-stone-100 px-3.5 py-2.5 text-sm font-semibold text-gray-400 shadow-sm hover:bg-stone-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-100"
+                className="flex-none rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-100"
               >
                 Send
               </button>
